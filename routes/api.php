@@ -8,4 +8,3 @@ use Liberu\Foundation\TwoFactorAuthenticationApi\Http\Controllers\StatusControll
 Route::prefix('api/v1/two-factor-authentication')->middleware('api')->group(function (): void {
     Route::get('/status', StatusController::class)->name('two-factor-authentication-api.status');
 });
-
